@@ -10,9 +10,9 @@ class Raindrops
       'PlingPlang'
     elsif factor_of_3?(n)
       'Pling'
-    elsif n % 5 == 0
+    elsif factor_of_5?(n)
       'Plang'
-    elsif n % 7 == 0
+    elsif factor_of_7?(n)
       'Plong'
     else
       n
@@ -23,5 +23,13 @@ class Raindrops
 
   def factor_of_3?(n)
     n % 3 == 0
+  end
+
+  def factor_of_5?(n)
+    n % 5 == 0
+  end
+
+  def factor_of_7?(n)
+    n % 7 == 0
   end
 end
