@@ -1,10 +1,10 @@
 class Raindrops
   def convert(n)
-    if n % 3 == 0 && n % 5 == 0 && n % 7 == 0
+    if factor_of_3_5_and_7?(n)
       'PlingPlangPlong'
-    elsif n % 5 == 0 && n % 7 == 0
+    elsif factor_of_5_and_7?(n)
       'PlangPlong'
-    elsif n % 3 == 0 && n % 7 == 0
+    elsif factor_of_3_and_7?(n)
       'PlingPlong'
     elsif factor_of_3_and_5?(n)
       'PlingPlang'
@@ -35,5 +35,17 @@ class Raindrops
 
   def factor_of_3_and_5?(n)
     n % 3 == 0 && n % 5 == 0
+  end
+
+  def factor_of_3_and_7?(n)
+    n % 3 == 0 && n % 7 == 0
+  end
+
+  def factor_of_5_and_7?(n)
+    n % 5 == 0 && n % 7 == 0
+  end
+
+  def factor_of_3_5_and_7?(n)
+    n % 3 == 0 && n % 5 == 0 && n % 7 == 0
   end
 end
