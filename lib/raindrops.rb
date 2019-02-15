@@ -4,6 +4,8 @@ class Raindrops
       'Pling'
     elsif n == 5
       'Plang'
+    elsif n == 7
+      'Plong'
     end
   end
 end
