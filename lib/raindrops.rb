@@ -2,7 +2,7 @@ class Raindrops
   def convert(n)
     if n % 3 == 0
       'Pling'
-    elsif n == 5
+    elsif n % 5 == 0
       'Plang'
     elsif n == 7
       'Plong'
