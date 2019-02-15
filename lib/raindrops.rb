@@ -4,7 +4,7 @@ class Raindrops
       'Pling'
     elsif n % 5 == 0
       'Plang'
-    elsif n == 7
+    elsif n % 7 == 0
       'Plong'
     end
   end
