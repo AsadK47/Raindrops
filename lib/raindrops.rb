@@ -14,6 +14,8 @@ class Raindrops
       'Plang'
     elsif n % 7 == 0
       'Plong'
+    else
+      n
     end
   end
 end
