@@ -1,6 +1,6 @@
 class Raindrops
   def convert(n)
-    if n == 3
+    if n % 3 == 0
       'Pling'
     elsif n == 5
       'Plang'
