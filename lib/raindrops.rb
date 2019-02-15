@@ -1,4 +1,4 @@
 class Raindrops
-  def convert
+  def convert(n)
   end
 end
