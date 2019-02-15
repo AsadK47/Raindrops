@@ -47,5 +47,9 @@ describe Raindrops do
     it 'can return PlingPlanPlong for factors of 3, 5 and 7' do
       expect(raindrops.convert(105)).to eq('PlingPlangPlong')
     end
+
+    it 'can return the number if not a factor of 3, 5 or 7' do
+      expect(raindrops.convert(1)).to eq(1)
+    end
   end
 end
