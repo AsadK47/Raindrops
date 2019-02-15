@@ -52,6 +52,25 @@ Metrics/BlockLength:
     - 'spec/**/*'
     - 'test/**/*'
 
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - 'lib/raindrops.rb'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'lib/raindrops.rb'
+
+Metrics/PerceivedComplexity:
+  Exlude:
+    - 'lib/raindrops.rb'
+
+Metrics/LineLength:
+  Exclude:
+    - 'lib/raindrops.rb'
+
+Metrics/PerceivedComplexity:
+  Exclude:
+    - 'lib/raindrops.rb'
 # Code Style
 # ==========
 #
