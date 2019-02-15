@@ -15,5 +15,9 @@ describe Raindrops do
     it 'can return Plang if the number is 5' do
       expect(raindrops.convert(5)).to eq('Plang')
     end
+
+    it 'can return Plong if the number is 7' do
+      expect(raindrops.convert(7)).to eq('Plong')
+    end
   end
 end
