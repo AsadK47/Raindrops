@@ -20,12 +20,16 @@ describe Raindrops do
       expect(raindrops.convert(7)).to eq('Plong')
     end
 
-    it 'can return Pling if the number is 6' do
+    it 'can return Pling if the number is 6; a factor of 3' do
       expect(raindrops.convert(6)).to eq('Pling')
     end
 
-    it 'can return Plang if the number is 10' do
+    it 'can return Plang if the number is 10; a factor of 5' do
       expect(raindrops.convert(10)).to eq('Plang')
+    end
+
+    it 'can return Plong if the number is 14; a factor of 7' do
+      expect(raindrops.convert(14)).to eq('Plong')
     end
   end
 end
