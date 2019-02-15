@@ -8,11 +8,11 @@ class Raindrops
       'PlingPlong'
     elsif is_a_factor_of_2_nums?(n, 3, 5)
       'PlingPlang'
-    elsif factor_of_3?(n)
+    elsif is_a_factor_of_1_nums?(n, 3)
       'Pling'
-    elsif factor_of_5?(n)
+    elsif is_a_factor_of_1_nums?(n, 5)
       'Plang'
-    elsif factor_of_7?(n)
+    elsif is_a_factor_of_1_nums?(n, 7)
       'Plong'
     else
       n
@@ -21,16 +21,8 @@ class Raindrops
 
   private
 
-  def factor_of_3?(n)
-    n % 3 == 0
-  end
-
-  def factor_of_5?(n)
-    n % 5 == 0
-  end
-
-  def factor_of_7?(n)
-    n % 7 == 0
+  def is_a_factor_of_1_nums?(n, a)
+    n % a == 0
   end
 
   def is_a_factor_of_2_nums?(n, a, b)
