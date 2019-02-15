@@ -4,17 +4,23 @@
       "/Users/asadk/Projects/Extra-Projects/Raindrops/spec/raindrops_spec.rb": [
         1,
         null,
-        0,
-        0,
+        1,
+        2,
         null,
-        0,
-        0,
-        0,
+        1,
+        1,
+        2,
         null,
+        null,
+        null
+      ],
+      "/Users/asadk/Projects/Extra-Projects/Raindrops/lib/raindrops.rb": [
+        1,
+        1,
         null,
         null
       ]
     },
-    "timestamp": 1550243008
+    "timestamp": 1550243073
   }
 }
