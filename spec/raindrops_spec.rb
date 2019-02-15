@@ -8,7 +8,7 @@ describe Raindrops do
       expect(raindrops).to respond_to(:convert).with(1).argument
     end
 
-    it 'can return Pling' do
+    it 'can return Pling if the number is 3' do
       expect(raindrops.convert(3)).to eq('Pling')
     end
   end
