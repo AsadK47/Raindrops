@@ -1,5 +1,9 @@
 class Raindrops
   def convert(n)
-    'Pling'
+    if n == 3
+      'Pling'
+    elsif n == 5
+      'Plang'
+    end
   end
 end
