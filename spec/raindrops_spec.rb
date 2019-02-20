@@ -44,21 +44,29 @@ describe Raindrops do
       expect(raindrops.convert(35)).to eq('PlangPlong')
     end
 
-    it 'can return PlingPlanPlong for factors of 3, 5 and 7' do
+    it 'can return PlingPlangPlong for factors of 3, 5 and 7' do
       expect(raindrops.convert(105)).to eq('PlingPlangPlong')
+    end
+
+    it 'can return Plung for factors of 9' do
+      expect(raindrops.convert(9)).to eq('PlingPlung')
+    end
+
+    it 'can return PlingPlangPlongPlung for factors of 3, 5, 7 and 9' do
+      expect(raindrops.convert(945)).to eq('PlingPlangPlongPlung')
     end
 
     context 'numbers not factors of 3, 5 or 7 are returned as is such as...' do
       it 'number 1' do
-        expect(raindrops.convert(1)).to eq(1)
+        expect(raindrops.convert(1)).to eq("1")
       end
 
       it 'number 4' do
-        expect(raindrops.convert(4)).to eq(4)
+        expect(raindrops.convert(4)).to eq("4")
       end
 
       it 'number 17' do
-        expect(raindrops.convert(17)).to eq(17)
+        expect(raindrops.convert(17)).to eq("17")
       end
     end
   end
